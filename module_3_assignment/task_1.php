@@ -2,10 +2,10 @@
 
 function lowerString($text){
     $lowerStr = strtolower($text);
-    str_replace("brown", "red", $lowerStr);
+    $newString = str_replace("brown", "red", $lowerStr);
 
-    return $lowerStr;
+    return $newString;
 }
 
 $text = "The quick brown fox jumps over the lazy dog.";
-echo lowerString($text);
+printf(lowerString($text));
